@@ -6,3 +6,7 @@ ffmpeg-python
 python-multipart
 openai-whisper 
 python-dotenv
+sqlalchemy
+psycopg2-binary
+boto3
+'celery[redis]'
