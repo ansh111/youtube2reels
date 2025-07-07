@@ -24,3 +24,10 @@ def get_task(task_id: str):
     task = db.query(Task).filter(Task.id == task_id).first()
     db.close()
     return task
+
+def get_task_by_url(youtube_url: str):
+    db = SessionLocal()
+    task = db.query(Task).filter(Task.youtube_url == youtube_url).first()
+    db.close()
+    return task
+    
